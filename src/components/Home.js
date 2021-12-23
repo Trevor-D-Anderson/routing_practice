@@ -3,10 +3,11 @@ import React from "react";
 const Home = (props) => {
   if (isNaN(props.input)) {
     if (!props.input) {
-      return <p>Welcome</p>;
+      return <p className="text-lg font-bold">Welcome</p>;
     } else {
       return (
         <p
+          className="text-lg font-bold"
           style={
             props.color
               ? {
@@ -21,7 +22,7 @@ const Home = (props) => {
       );
     }
   } else {
-    return <p>The Number is: {props.input}</p>;
+    return <p className="text-lg font-bold">The Number is: {props.input}</p>;
   }
 };
 
